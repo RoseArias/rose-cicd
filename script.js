@@ -1,0 +1,12 @@
+
+//load time and date in js src = https://weekendprojects.dev/posts/display-current-date-and-time-in-html/
+window.onload = function() {
+  setInterval(function(){
+    var date = new Date();
+    var displayDate = date.toLocaleDateString();
+    var displayTime = date.toLocaleTimeString();
+
+    document.getElementById('datetime').innerHTML = displayDate + " " + displayTime;
+  }, 1000);
+
+}
